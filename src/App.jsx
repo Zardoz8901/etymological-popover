@@ -1,35 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { css } from "@pigment-css/react";
+import { globalReset } from "./styles/reset";
+
+globalReset;
+
+const headerStyle = css({
+  color: "teal",
+});
+
+const paragraphStyle = css({
+  color: "orange",
+});
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+    <div>
+      <h1 className={headerStyle}>Test Heading</h1>
+      <p className={paragraphStyle}>
+        This is a test paragraph with some <strong>bold text</strong>.
       </p>
-    </>
-  )
+      <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+      </ul>
+      <img src="https://via.placeholder.com/150" alt="Placeholder" />
+      <button>Test Button</button>
+    </div>
+  );
 }
 
-export default App
+export default App;
