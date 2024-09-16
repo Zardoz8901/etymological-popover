@@ -6,8 +6,8 @@ Etymology Popover is a React component that enhances text with interactive etymo
 
 ## Features
 
-Interactive text with word-specific popovers
-Etymology information display on hover
-Smooth animations for popover appearance/disappearance
-Responsive design for various screen sizes
-Customizable styling to match different UI themes
+- Interactive text with word-specific popovers
+- Etymology information display on hover
+- Smooth animations for popover appearance/disappearance
+- Responsive design for various screen sizes
+- Customizable styling to match different UI themes
