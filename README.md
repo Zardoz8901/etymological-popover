@@ -1,8 +1,12 @@
-# React + Vite
+#Etymology Popover
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+##Description
+Etymology Popover is a React component that enhances text with interactive etymology information. When users hover over words in a text, a popover appears displaying the word's origin and history. This tool aims to make reading more informative and engaging by providing instant access to linguistic insights.
 
-Currently, two official plugins are available:
+##Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Interactive text with word-specific popovers
+Etymology information display on hover
+Smooth animations for popover appearance/disappearance
+Responsive design for various screen sizes
+Customizable styling to match different UI themes
