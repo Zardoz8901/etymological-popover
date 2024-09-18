@@ -1,29 +1,49 @@
 import { css } from "@pigment-css/react";
 import { globalReset } from "./styles/reset";
-
+import Popover from "./components/Popover/Popover";
 globalReset;
 
+const appStyle = css({
+  backgroundColor: "inherit",
+  minHeight: "100vh",
+  width: "60vw",
+  margin: "0 auto",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  flexDirection: "column",
+  padding: "20px",
+  gap: "20px",
+});
+
 const headerStyle = css({
-  color: "teal",
+  color: "black",
 });
 
 const paragraphStyle = css({
-  color: "orange",
+  color: "black",
 });
 
 function App() {
   return (
-    <div>
-      <h1 className={headerStyle}>Test Heading</h1>
+    <div className={appStyle}>
+      <h1 className={headerStyle}>The History of Typography</h1>
       <p className={paragraphStyle}>
-        This is a test paragraph with some <strong>bold text</strong>.
+        Typography has evolved significantly over the centuries. From the early
+        days of handwritten manuscripts to the advent of the printing press, the
+        way we present text has undergone numerous transformations.
       </p>
-      <ul>
-        <li>List item 1</li>
-        <li>List item 2</li>
-      </ul>
-      <img src="https://via.placeholder.com/150" alt="Placeholder" />
-      <button>Test Button</button>
+      <Popover />
+      <p className={paragraphStyle}>
+        In the digital age, typography continues to play a crucial role in
+        design and communication. Modern tools and technologies have made it
+        easier than ever to experiment with different fonts and styles.
+      </p>
+      <p className={paragraphStyle}>
+        Understanding the history and principles of typography can greatly
+        enhance one&apos;s ability to create visually appealing and effective
+        designs.
+      </p>
     </div>
   );
 }
