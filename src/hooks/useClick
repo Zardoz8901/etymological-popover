@@ -1,0 +1,25 @@
+import React from "react";
+
+function useClick() {
+  const [clicked, setClicked] = React.useState(false);
+  const [mousePosition, setMousePosition] = React.useState({ x: 0, y: 0 });
+
+  const handleClick = (event) => {
+    setClicked(true);
+    setMousePosition({
+      x: event?.clientX,
+      y: event?.clientY,
+    });
+  };
+
+  React.useEffect(() => {
+    if (clicked) {
+      console.log(mousePosition);
+      // You can add more logic here if needed
+    }
+  }, [clicked, mousePosition]);
+
+  return { clicked, handleClick, mousePosition };
+}
+
+export default useClick;
